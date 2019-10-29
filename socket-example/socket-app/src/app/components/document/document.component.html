@@ -1,1 +1,9 @@
+<h1>WebSocket App</h1>
 <textarea [(ngModel)]='document.doc' (keyup)='editDoc()' placeholder='Start typing...'></textarea>
+
+<button [(ngModel)]='document.doc' onClick='vote(1)'>Chinese Food</button> {{document.doc.option1count}} <br>
+<button [(ngModel)]='document.doc' onClick='vote(2)'>Mexican Food</button> {{document.doc.option2count}}  <br>
+<button [(ngModel)]='document.doc' onClick='vote(3)'>Indian Food</button> {{document.doc.option3count}}  <br>
+<button [(ngModel)]='document.doc' onClick='vote(4)'>Sandwiches... food  </button> {{document.doc.option4count}} <br>
+<button [(ngModel)]='document.doc' onClick='vote(5)'>Thai Food</button>  {{document.doc.option5count}} <br>
+

@@ -25,6 +25,9 @@ export class DocumentService {
     this.socket.emit('editDoc', document);
   }
 
+
+
+
   private docId() {
     let text = '';
     const possible = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';

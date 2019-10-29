@@ -27,4 +27,26 @@ export class DocumentComponent implements OnInit, OnDestroy {
   editDoc() {
     this.documentService.editDocument(this.document);
   }
+  vote(choice) {
+    if(choice == 1) {
+      this.document.option1count++;
+      this.editDoc()
+    }
+    if(choice == 2) {
+      this.document.option2count++;
+      this.editDoc()
+    }
+    if(choice == 3) {
+      this.document.option3count++;
+      this.editDoc()
+    }
+    if(choice == 4) {
+      this.document.option4count++;
+      this.editDoc()
+    }
+    if(choice == 5) {
+      this.document.option5count++;
+      this.editDoc()
+    }
+  }
 }
